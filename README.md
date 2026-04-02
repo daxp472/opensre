@@ -89,9 +89,7 @@ Unlike closed SRE platforms, Tracer is **fully open source and self-hostable**. 
 
 ## How is Open SRE different?
 
-SWE-bench<sup>1</sup> gave coding agents scalable training data and clear feedback. Production incident response still has no equivalent.
-
-Distributed failures are slower, noisier, and harder to simulate and evaluate than local code tasks, which is why AI SRE, and AI for production debugging more broadly, remains unsolved.
+SWE-bench<sup>1</sup> gave coding agents scalable training data and clear feedback. Production incident response still has no equivalent. Distributed failures are slower, noisier, and harder to simulate and evaluate than local code tasks, which is why AI SRE, and AI for production debugging more broadly, remains unsolved.
 
 OpenSRE is building that missing layer:
 
