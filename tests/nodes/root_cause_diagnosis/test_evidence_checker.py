@@ -16,7 +16,7 @@ def test_is_clearly_healthy_pure_eks():
         "eks_deployments": [{"name": "payments-api", "ready": 3, "desired": 3}],
         "eks_node_health": [{"name": "node-1", "ready": "True"}],
     }
-    
+
     assert is_clearly_healthy(raw_alert, eks_only) is True
 
 def test_is_clearly_healthy_mixed():
@@ -31,7 +31,7 @@ def test_is_clearly_healthy_mixed():
         "eks_pods": [{"name": "payments-api-x", "phase": "Running"}],
         "datadog_logs": []
     }
-    
+
     assert is_clearly_healthy(raw_alert, mixed) is True
 
 def test_is_clearly_healthy_not_healthy_state():
@@ -45,5 +45,5 @@ def test_is_clearly_healthy_not_healthy_state():
     eks_only = {
         "eks_pods": [{"name": "payments-api-x", "phase": "Running"}],
     }
-    
+
     assert is_clearly_healthy(raw_alert, eks_only) is False

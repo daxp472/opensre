@@ -65,6 +65,9 @@ def check_evidence_availability(
         or evidence.get("aws_cloudwatch_metrics")
         or evidence.get("aws_rds_events")
         or evidence.get("aws_performance_insights")
+        or evidence.get("eks_pods") is not None
+        or evidence.get("eks_events") is not None
+        or evidence.get("eks_node_health") is not None
     )
 
     # Check for evidence in alert annotations or raw text
