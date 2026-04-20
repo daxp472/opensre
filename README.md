@@ -626,6 +626,13 @@ Thanks goes to these amazing people:
             <sub><b>alexanderkreidich</b></sub>
         </a>
     </td>
+            <td align="center">
+        <a href="https://github.com/afif1400">
+            <img src="https://avatars.githubusercontent.com/u/51887071?v=4" width="100" alt="afif1400"/>
+            <br />
+            <sub><b>afif1400</b></sub>
+        </a>
+    </td>
 		</tr>
 	</tbody>
 </table>
